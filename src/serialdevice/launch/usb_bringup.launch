@@ -1,0 +1,50 @@
+<launch>
+
+  <node name="ardu_remoter_pub" pkg="serialdevice" type="ardu_remoter_pub" output="screen" respawn="false">
+    <param name="port"       value="/dev/remo_usb"/>  
+    <param name="baudrate"   value="9600"/>
+    <param name="loop_rate"   value="25"/>
+
+    <param name="armx"   value="0.5"/>
+    <param name="army"   value="0.5"/>
+    <param name="armz"   value="0.5"/>
+    <param name="armRx"   value="0.5"/>
+    <param name="armRy"   value="0.5"/>
+    <param name="armRz"   value="0.5"/>
+    <param name="carx"   value="1"/>
+    <param name="carz"   value="1"/>
+  </node>
+
+  <node name="cha_control" pkg="serialdevice" type="cha_control" output="screen" respawn="false">
+    <param name="port"       value="/dev/car_usb"/>  
+    <param name="baudrate"   value="9600"/>
+    <param name="loop_rate"   value="25"/>
+  </node>
+
+  <node name="head_pan" pkg="serialdevice" type="head_pan" output="screen" respawn="false">
+    <param name="head_pan_port"       value="/dev/headpan_usb"/>  
+    <param name="head_pan_baudrate"   value="9600"/>
+    <param name="loop_rate"   value="20"/>
+    
+    <param name="pitchuplim"   value="180.0"/>
+    <param name="pitchdownlim"   value="0.0"/>
+    <param name="yawuplim"   value="180.0"/>
+    <param name="yawdownlim"   value="0.0"/>
+  </node>
+
+  <node name="paw" pkg="serialdevice" type="paw_node" output="screen" respawn="false">
+    <param name="loop_rate"   value="20"/>
+
+    <param name="leftpaw_use"   value="0"/>
+    <param name="leftpaw_port"       value="/dev/leftpaw"/>  
+    <param name="leftpaw_baudrate"   value="9600"/>
+    <param name="rightpaw_use"   value="1"/>
+    <param name="rightpaw_port"   value="/dev/paw_usb"/>
+    <param name="rightpaw_baudrate"   value="9600"/>
+  </node>
+
+
+</launch>
+
+
+

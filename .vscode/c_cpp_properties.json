@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/agx/ur_track/devel/include/**",
+        "/home/agx/nvidia_ws/devel/include/**",
+        "/home/agx/ur5/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/agx/ur_track/src/Universal_Robots_ROS_Driver/controller_stopper/include/**",
+        "/home/agx/ur_track/src/Universal_Robots_ROS_Driver/ur_calibration/include/**",
+        "/home/agx/ur_track/src/Universal_Robots_ROS_Driver/ur_controllers/include/**",
+        "/home/agx/ur5/src/fmauch_universal_robot/ur_kinematics/include/**",
+        "/home/agx/ur_track/src/Universal_Robots_ROS_Driver/ur_robot_driver/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ]
+}

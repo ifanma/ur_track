@@ -1,0 +1,14 @@
+<launch>
+
+  <node name="cha_control" pkg="serialdevice" type="cha_control" output="screen" respawn="false">
+  <param name="port"       value="/dev/car_usb"/>  
+  <!-- <param name="port"       value="/dev/ttyUSB0"/>   -->
+  <param name="baudrate"   value="9600"/>
+  <param name="loop_rate"   value="25"/>
+
+  </node>
+
+</launch>
+
+
+
